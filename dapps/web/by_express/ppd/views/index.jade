@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h4 Pay per download
+  input(id="iBtnPayment" type="button" value="Payment")
+  br
+  textarea(id="iText")
+  br
+  hr
+
+  script(type='text/javascript',src='http://localhost:8000/socket.io/socket.io.js')
+  script(type='text/javascript',src='https://cdnjs.cloudflare.com/ajax/libs/openpgp/4.6.2/compat/openpgp.min.js')
+  script(type='text/javascript',src='https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js')
+  script(type='text/javascript',src='/javascripts/abiJson_ppd.js')
+  script(type='text/javascript',src='/javascripts/main.js')
